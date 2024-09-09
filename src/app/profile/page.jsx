@@ -56,7 +56,7 @@ export default async function ProfilePage() {
       </div>
 
       {check && (
-        <div className="p-4 bg-blue-200 text-blue-700 font-semibold rounded-md">{`${check}`}</div>
+        <div className="p-4 bg-blue-200 text-red-700 font-semibold rounded-md">{`Current Badge: ${check}`}</div>
       )}
       <div className="p-4 bg-blue-100 text-blue-700 font-semibold rounded-md">
         <LogoutButton />
