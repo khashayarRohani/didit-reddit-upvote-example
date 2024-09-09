@@ -27,6 +27,12 @@ export default async function RootLayout({ children }) {
             >
               Add post
             </Link>
+            <Link
+              className="ml-10 hover:bg-zinc-300 p-2 rounded bg-pink-300 text-black"
+              href="/profile"
+            >
+              Profile
+            </Link>
             <div className="ml-auto">
               <UserInfo />
             </div>
