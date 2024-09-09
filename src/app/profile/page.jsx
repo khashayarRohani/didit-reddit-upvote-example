@@ -48,16 +48,19 @@ export default async function ProfilePage() {
         <AvatarDemo src={user.image} />
         <p>username : {user.name}</p>
       </div>
-      <div className="flex flex-row items-center gap-2 mt-2 ml-2 font-mono text-black-600">
+      <div className="p-4 bg-blue-200 text-blue-700 font-semibold rounded-md">
         <p>posts Count: {`${postsCount}`} </p>
-        <p> most voted post: {`${num}`}</p>
       </div>
-      <div>
+      <div className="p-4 bg-blue-100 text-blue-700 font-semibold rounded-md">
+        <p> most positive post: {`${num}`}</p>
+      </div>
+
+      {check && (
+        <div className="p-4 bg-blue-200 text-blue-700 font-semibold rounded-md">{`${check}`}</div>
+      )}
+      <div className="p-4 bg-blue-100 text-blue-700 font-semibold rounded-md">
         <LogoutButton />
       </div>
-      {check && (
-        <div className="p-4 bg-blue-100 text-blue-700 font-semibold rounded-md">{`${check}`}</div>
-      )}
     </>
   );
 }
