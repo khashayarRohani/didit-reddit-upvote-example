@@ -55,7 +55,9 @@ export default async function ProfilePage() {
       <div>
         <LogoutButton />
       </div>
-      {check && <div>{`${check}`}</div>}
+      {check && (
+        <div className="p-4 bg-blue-100 text-blue-700 font-semibold rounded-md">{`${check}`}</div>
+      )}
     </>
   );
 }
